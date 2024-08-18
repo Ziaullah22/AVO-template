@@ -1,0 +1,163 @@
+.footer-container {
+    position: relative;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    clip-path: polygon(73% 20%, 100% 0, 100% 100%, 69% 100%, 0 100%, 0 0);
+    height: 400px;
+}
+
+
+.footer-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #f3f3f3;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.subscribe form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b91525;
+    color: white;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #b91525;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #f3f3f3;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #b91525;
+}
+@media (max-width: 1200px) {
+    .footer-container{
+        height: auto;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 15px 0;
+        height: auto;
+    }
+
+    .footer-section h3 {
+        font-size: 1rem;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+    }
+
+    .subscribe input {
+        width: 90%;
+    }
+
+    .subscribe button {
+        padding: 8px 16px;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-section h3 {
+        font-size: 0.9rem;
+    }
+
+    .subscribe input {
+        width: 100%;
+    }
+
+    .subscribe button {
+        padding: 8px 14px;
+    }
+
+    .social-icons a {
+        font-size: 1rem;
+        margin: 0 8px;
+    }
+}

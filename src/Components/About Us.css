@@ -1,0 +1,409 @@
+.about-us {
+    padding: 20px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.about-us-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.about-us-heading h2 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.about-us.visible .about-us-heading {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: normal;
+    opacity: 80%;
+}
+
+.about-us.visible .about-us-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-us-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-us-row-column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 10px;
+    position: relative;
+}
+
+.about-us-row-column:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: url('about.jpg.webp') no-repeat center center;
+    background-size: cover;
+    height: 450px;
+    margin-top: 20px;
+}
+
+.about-us-row-column h4 {
+    font-family: sans-serif;
+    text-align: right;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.about-us-row-column p {
+    font-family: sans-serif;
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: right;
+    color: rgb(160, 149, 149);
+}
+
+.about-us-row-column:nth-child(3) p {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.view-all-projects {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: -150px;
+    font-family: sans-serif;
+}
+
+.view-all-projects:hover {
+    background-color: #b91525;
+    text-decoration: none;
+    color: white;
+}
+
+.about-us-row-new {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-us-row-new-column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 10px;
+    position: relative;
+}
+
+.number {
+    font-family: sans-serif;
+    display: inline-block;
+    font-size: 3.5em;
+    color: #dc3545;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(202, 192, 192);
+}
+
+.text {
+    font-family: sans-serif;
+    font-size: 1.1em;
+    color: black;
+    width: 10px !important;
+}
+
+.about-us-row-new-column p {
+    font-family: sans-serif;
+    color: rgb(160, 149, 149);
+    margin-left: 85px;
+    text-align: left;
+}
+
+.about-us-row-column,
+.about-us-row-new-column {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.about-us.visible .about-us-row-column,
+.about-us.visible .about-us-row-new-column {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+    .about-us {
+        padding: 10px;
+        overflow: hidden;
+        margin-top: 30px;
+    }
+    
+    .about-us-heading {
+        text-align: center;
+        margin-bottom: 10px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    }
+    
+    .about-us-heading h2 {
+        font-weight: bold;
+        margin: 0;
+        font-size: 20px;
+    }
+    
+    .about-us.visible .about-us-heading {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .about-us-content {
+        display: flex;
+        justify-content: space-between;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+        width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    
+    .column {
+        flex: 1;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    .icon {
+        font-size: 2em;
+        margin-bottom: 6px;
+        font-weight: normal;
+        opacity: 70%;
+    }
+    
+    .about-us.visible .about-us-content {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .about-us-row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .about-us-row-column {
+        flex: 1;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0 5px;
+        position: relative;
+    }
+    
+    .about-us-row-column:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: url('about.jpg.webp') no-repeat center center;
+        background-size: cover;
+        height: 300px;
+        margin-top: 10px;
+    }
+    
+    .about-us-row-column h4 {
+        font-family: sans-serif;
+        text-align: right;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .about-us-row-column p {
+        font-family: sans-serif;
+        margin-top: 5px;
+        font-size: 0.8em;
+        line-height: 1.3;
+        text-align: right;
+        color: rgb(160, 149, 149);
+    }
+    
+    .about-us-row-column:nth-child(3) p {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .view-all-projects {
+        display: inline-block;
+        padding: 8px 12px;
+        background-color: #dc3545;
+        color: white;
+        font-size: 0.8em;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-left: -80px;
+        font-family: sans-serif;
+    }
+    
+    .view-all-projects:hover {
+        background-color: #b91525;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .about-us-row-new {
+        display: flex;
+        justify-content: space-between;
+        width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .about-us-row-new-column {
+        flex: 1;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0 5px;
+        position: relative;
+    }
+    
+    .number {
+        font-family: sans-serif;
+        display: inline-block;
+        font-size: 2em;
+        color: #dc3545;
+        margin-bottom: 6px;
+        border-bottom: 1px solid rgb(202, 192, 192);
+    }
+    
+    .text {
+        font-family: sans-serif;
+        font-size: 0.9em;
+        color: black;
+    }
+    
+    .about-us-row-new-column p {
+        font-family: sans-serif;
+        color: rgb(160, 149, 149);
+        margin-left: 30px;
+        text-align: left;
+    }
+    
+    .about-us-row-column,
+    .about-us-row-new-column {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    }
+    
+    .about-us.visible .about-us-row-column,
+    .about-us.visible .about-us-row-new-column {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .about-us-content,
+    .about-us-row,
+    .about-us-row-new {
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width for smaller screens */
+        margin: 0; /* Remove margins */
+    }
+
+    .column {
+        text-align: center; /* Center align text in columns */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .about-us-row-column,
+    .about-us-row-new-column {
+        margin: 10px 0; /* Margin for spacing between items */
+
+    }
+
+    .about-us-row-column:nth-child(2) {
+        order: -1;
+        background: none;
+        background-size: auto;
+        height: 350px; /* Reduce height for smaller screens */
+        
+    }
+
+    .about-us-row-column h4,
+    .about-us-row-column p {
+        text-align: center; /* Center align text */
+        margin: 10px 0; /* Margin for spacing */
+    }
+
+    .view-all-projects {
+        margin: 0; /* Remove negative margin */
+        display: block; /* Display button as block for full width */
+        width: 100%; /* Full width for button */
+        text-align: center; /* Center align button text */
+    }
+
+    .number {
+        font-size: 2.5em; /* Reduce font size */
+        margin-bottom: 5px; /* Reduce margin */
+    }
+
+    .text {
+        font-size: 1em; /* Adjust font size */
+        width: auto; /* Adjust width */
+    }
+}

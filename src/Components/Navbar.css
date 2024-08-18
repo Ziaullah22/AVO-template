@@ -1,0 +1,333 @@
+
+.body {
+    font-family: sans-serif;
+}
+
+.custom-navbar {
+    background-image: url('E:\Intern Projects\react\avo\src\Components\bg_1.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    height: 605px;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(50% 0%, 100% 0, 100% 85%, 68% 100%, 0 87%, 0 0);
+}
+
+.custom-navbar::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+
+}
+
+.navbar {
+    position: absolute;
+    top: 10px;
+    width: 90%;
+    left: 50px;
+    background: transparent;
+    z-index: 1;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white !important;
+}
+
+.red-v {
+    color: #dc3545;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    width: 90%;
+}
+
+.navbar-heading {
+    color: white;
+    text-align: left;
+}
+
+.navbar-heading h2 {
+    font-weight: 800;
+    margin: 0;
+    font-size: 2.2rem;
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+.navbar-heading h2 + h2 {
+    margin-top: 10px;
+}
+
+.navbar-heading h2 + h2 + h2 {
+    margin-top: 10px;
+}
+
+.heading-paragraph {
+    font-family: sans-serif;
+    color: rgb(167, 161, 161);
+    font-size: 1rem;
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: 60px;
+}
+
+.explore-button {
+    display: inline-block;
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    margin-left: 60px;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+    width: 155px;
+}
+
+.explore-button:hover {
+    background-color: #c82333;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: #9fa6aa !important;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #dc3545 !important;
+}
+
+.nav-item.active .nav-link {
+    color: #dc3545 !important;
+}
+
+.navbar button {
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: #9fa6aa;
+    cursor: pointer;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.navbar button:hover {
+    color: #dc3545 !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,...');
+}
+
+.experience-info {
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.experience-number {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    margin-right: 20px;
+}
+
+.experience-details {
+    display: flex;
+    align-items: center;
+}
+
+.vertical-line {
+    font-family: sans-serif;
+    width: 4px;
+    height: 50px;
+    background: #dc3545;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.experience-text {
+    color: gray;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+.video-icon-container {
+    position: absolute;
+    bottom: -50px;
+    left: 52%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.video-icon {
+    display: inline-block;
+    background-color: #dc3545; 
+    color: rgb(32, 30, 30);
+    padding: 15px;
+    border-radius: 50%; 
+    font-size: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 80px;
+    width: 80px;
+}
+
+.video-icon i {
+    margin: 0;
+    margin-left: 15px;
+    color: inherit;
+}
+
+.video-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.video-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-decoration: none;
+}
+
+.video-icon:hover::after {
+    opacity: 1;
+    text-decoration: none;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+@media (max-width: 767px) {
+    .custom-navbar {
+        height: auto;
+    }
+
+    .navbar {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-brand {
+        margin-left: 15px;
+        font-size: 1.25rem;
+    }
+
+    .navbar-content {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-heading h2 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    .heading-paragraph {
+        font-size: 0.9rem;
+        margin-left: 15px;
+        max-width: 100%;
+    }
+
+    .explore-button {
+        margin-left: 15px;
+        width: auto;
+        display: block;
+    }
+
+    .experience-info {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .experience-number {
+        font-size: 2rem;
+        margin-right: 0;
+    }
+
+    .experience-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical-line {
+        width: 100%;
+        height: 2px;
+        margin: 10px 0;
+    }
+
+    .video-icon-container {
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .video-icon {
+        height: 60px;
+        width: 60px;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,329 @@
+@keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.clients {
+    text-align: center;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.clients-title {
+    font-size: 34px;
+    margin-bottom: 80px;
+    font-weight: 800;
+   
+}
+
+.client {
+    top: 15px;
+    padding: 20px;
+    background: #f3f3f3;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 240px;
+    position: relative;
+    animation: slideUp 0.5s ease-out;
+}
+
+.client-quote {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+    color: gray;
+}
+
+.client-profile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.client-profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.client-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.client-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.client-post {
+    font-size: 14px;
+    color: gray;
+    margin: 0;
+}
+
+.slick-slide {
+    padding: 0 10px;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.slick-dots {
+
+    bottom: 10px;
+    top: 250px;
+}
+
+.slick-slider {
+    margin: 0 auto;
+    
+}
+
+.quote-icon {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    font-size: 40px;
+    color: #dc3545;
+    z-index: 10;
+}
+.full-width-image-container {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 100px;
+}
+
+.full-width-image {
+    width: 100%;
+    height: 400px;
+}
+.get-started-text {
+    font-family: sans-serif;
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    color: #dc3545;
+    font-size: 18px;
+    font-weight: normal;
+    z-index: 10;
+}
+.full-width-image-container h3{
+    font-family: sans-serif;
+    position: absolute;
+    top: 90px; 
+    left: 70px;
+    text-align: left;
+    color: rgb(228, 228, 228);
+    z-index: 10;
+    width: 400px;
+
+}
+.full-width-image-container p{
+    font-family: sans-serif;
+    position: absolute;
+    top: 175px; 
+    left: 70px;
+    text-align: left;
+    color: rgb(182, 177, 177);
+    z-index: 10;
+    width: 400px;
+}
+
+
+.get-started-button {
+    position: absolute;
+    top: 280px; 
+    left: 70px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 14px; /* Adjust font size as needed */
+    font-weight: 400; /* Slightly bolder for visibility */
+    border-radius: 5px; /* Optional: for rounded corners */
+    cursor: pointer;
+    z-index: 10; /* Ensure it is on top of the image */
+}
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .clients {
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    .clients-title {
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+
+    .client {
+        height: 260px;
+        padding: 15px;
+    
+    }
+
+    .client-profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+
+    .client-name {
+        font-size: 16px;
+    }
+
+    .client-post {
+        font-size: 12px;
+    }
+
+    .quote-icon {
+        font-size: 30px;
+    }
+
+    .full-width-image-container {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .full-width-image {
+        height: 300px;
+    }
+
+    .get-started-text, .full-width-image-container h3, .full-width-image-container p {
+        left: 20px;
+        width: 90%;
+    }
+
+    .get-started-button {
+        top: auto; /* Adjust if necessary */
+        left: 250px;
+        padding: 8px 16px;
+        font-size: 12px;
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .clients-title {
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+
+    .client {
+        height: 260px;
+        padding: 10px;
+        width: 100px;
+    }
+
+    .client-profile-pic {
+        width: 50px;
+        height: 50px;
+    }
+
+    .client-name {
+        font-size: 14px;
+    }
+
+    .client-post {
+        font-size: 11px;
+    }
+
+    .quote-icon {
+        font-size: 25px;
+    }
+
+    .full-width-image-container {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .full-width-image {
+        height: 300px;
+    }
+
+    .get-started-text, .full-width-image-container h3, .full-width-image-container p {
+        left: 10px;
+        width: 80%;
+        margin-top: -50px;
+    }
+
+    .get-started-button {
+        left: 250px;
+        padding: 8px 14px;
+        font-size: 11px;
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .clients-title {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .client {
+        height: 180px;
+        padding: 5px;
+    }
+
+    .client-profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .client-name {
+        font-size: 12px;
+    }
+
+    .client-post {
+        font-size: 10px;
+    }
+
+    .quote-icon {
+        font-size: 20px;
+        margin-top: 12px;
+    }
+
+    .full-width-image-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .full-width-image {
+        height: auto;
+    }
+
+    .get-started-text, .full-width-image-container h3, .full-width-image-container p {
+        left: 10px;
+        width: 90%;
+        margin-top: -50px;
+    }
+
+    .get-started-button {
+        left: 120px;
+        padding: 5px 10px;
+        font-size: 10px;
+        margin-top: 200px;
+    }
+}
